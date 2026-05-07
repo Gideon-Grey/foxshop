@@ -1,6 +1,6 @@
 import { productsByCategory } from "@/shared/mock/products";
 import { notFound } from "next/navigation";
-import { ProductDetails } from "@/entities/product/ui/ProductDetails";
+import { ProductDetails } from "@/entities/product/ui/ProductDetails/ProductDetails";
 
 export default async function ProductPage({
   params,

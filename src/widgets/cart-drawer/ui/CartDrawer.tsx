@@ -16,7 +16,13 @@ export const CartDrawer = () => {
   const drawerRef = useSwipeToClose({
     isOpen,
     onClose: () => dispatch(closeCart()),
-    threshold: 50,
+    threshold: 80,
+  });
+
+  const overlayRef = useSwipeToClose({
+    isOpen,
+    onClose: () => dispatch(closeCart()),
+    threshold: 80,
   });
 
   useEffect(() => {
@@ -41,9 +47,19 @@ export const CartDrawer = () => {
     dispatch(closeCart());
   };
 
+  const handleDrawerClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+  };
+
   return (
     <>
-      {isOpen && <div className={styles.overlay} onClick={handleClose} />}
+      {isOpen && (
+        <div
+          ref={overlayRef}
+          className={styles.overlay}
+          onClick={handleClose}
+        />
+      )}
 
       <div
         ref={drawerRef}
@@ -51,6 +67,7 @@ export const CartDrawer = () => {
         role="dialog"
         aria-modal="true"
         aria-label="Shopping cart"
+        onClick={handleDrawerClick}
       >
         <div className={styles.header}>
           <span>Your cart ({items.length})</span>

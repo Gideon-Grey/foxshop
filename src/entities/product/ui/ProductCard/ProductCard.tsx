@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Product } from "../model/types";
+import { Product } from "../../model/types";
 import { useCart } from "@/features/cart/lib/useCart";
 import { imageSizes } from "@/shared/lib/imageConfig";
 import styles from "./ProductCard.module.scss";

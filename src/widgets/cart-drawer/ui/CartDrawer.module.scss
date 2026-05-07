@@ -216,6 +216,46 @@
 @media (max-width: 768px) {
   .drawer {
     width: 100%;
+    box-shadow: none;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 4px;
+      background: #ddd;
+      border-radius: 2px;
+      z-index: 1;
+    }
+  }
+
+  .header {
+    padding: 20px 16px;
+    font-size: 16px;
+
+    padding-top: 28px;
+  }
+
+  .closeBtn {
+    font-size: 24px;
+    padding: 8px 12px;
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  .list {
+    padding: 16px 12px;
+  }
+
+  .item {
+    gap: 14px;
+    margin-bottom: 20px;
   }
 
   .image {
@@ -223,35 +263,108 @@
     height: 70px;
   }
 
-  .header {
-    padding: 20px 16px;
+  .title {
+    font-size: 14px;
+    line-height: 1.4;
   }
 
-  .closeBtn {
-    font-size: 24px;
-    padding: 8px 12px;
+  .price {
+    font-size: 15px;
+    margin-bottom: 8px;
   }
 
-  .checkout {
-    padding: 16px;
+  .controls {
+    gap: 12px;
   }
 
   .qtyBtn {
     width: 36px;
     height: 36px;
     font-size: 18px;
+    border-radius: 8px;
+
+    &:active {
+      background: #f0f0f0;
+      transform: scale(0.95);
+    }
+  }
+
+  .quantity {
+    font-size: 16px;
+    min-width: 24px;
   }
 
   .remove {
-    padding: 8px;
-    font-size: 18px;
+    padding: 8px 12px;
+    font-size: 20px;
+    margin-left: auto;
+  }
+
+  .footer {
+    padding: 20px 16px;
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
+  }
+
+  .total {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .checkout {
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 12px;
+
+    &:active {
+      background: #333;
+    }
+  }
+
+  .empty {
+    padding: 80px 20px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .continueBtn {
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .image {
+    width: 60px;
+    height: 60px;
   }
 
   .title {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .price {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .qtyBtn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .quantity {
+    font-size: 14px;
+    min-width: 20px;
+  }
+
+  .total {
+    font-size: 18px;
+  }
+
+  .checkout {
+    padding: 14px;
   }
 }

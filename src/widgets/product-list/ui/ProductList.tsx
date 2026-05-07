@@ -3,7 +3,7 @@
 import { useSelector } from "react-redux";
 import { useMemo } from "react";
 import { Product } from "@/entities/product/model/types";
-import { ProductCard } from "@/entities/product/ui/ProductCard";
+import { ProductCard } from "@/entities/product/ui/ProductCard/ProductCard";
 import { selectSearchQuery } from "@/features/search/model/selectors";
 import { useInfiniteScroll } from "@/shared/lib/useInfiniteScroll";
 import styles from "./ProductList.module.scss";
