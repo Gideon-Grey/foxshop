@@ -7,7 +7,7 @@ The project simulates a real online marketplace with categories, product catalog
 
 ## Demo
 
-Live: https://your-deploy-url.vercel.app
+Live: https://foxshop-t7qk.vercel.app/
 
 ---
 
