@@ -1,0 +1,98 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  color: inherit;
+
+  border: 1px solid rgb(216, 215, 215);
+  border-radius: 12px;
+  padding: 14px;
+
+  height: 100%;
+  background: white;
+
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.image {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+
+  display: -webkit-box;
+
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.button {
+  margin-top: auto;
+
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+
+  background: #111;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #333;
+}
+
+.content {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.price {
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.default {
+  color: black;
+}
+
+.promo {
+  color: #e60023;
+}
+
+@media (max-width: 768px) {
+  .image {
+    height: 140px;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .button {
+    padding: 6px 8px;
+  }
+}

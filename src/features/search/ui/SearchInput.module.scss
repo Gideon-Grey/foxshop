@@ -1,0 +1,12 @@
+.search {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 40vh;
+  transition: 0.2s;
+
+  &:focus {
+    border-color: black;
+  }
+}
