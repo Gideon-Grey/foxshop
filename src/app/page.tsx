@@ -5,7 +5,7 @@ import { ProductListSkeleton } from "@/widgets/product-list/ui/ProductListSkelet
 import { PromoBlock } from "@/shared/ui/promo-block/PromoBlock";
 import { productsByCategory } from "@/shared/mock/products";
 import { getRandomItems } from "@/shared/lib/getRandomItems";
-import { homeLayout } from "@/pages/home/model/homeLayout";
+import { homeLayout } from "@/shared/config/homeLayout";
 import styles from "./page.module.scss";
 
 export default function HomePage() {
