@@ -24,7 +24,7 @@ Live: https://foxshop-t7qk.vercel.app/
 
 ## Features
 
-### 🛍 Product system
+### Product system
 
 - Product catalog by categories
 - Mock product data (no backend required)
