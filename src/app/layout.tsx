@@ -22,9 +22,7 @@ export default function RootLayout({
 
           <CartDrawer />
 
-          <main style={{ minHeight: "80vh", paddingTop: "140px" }}>
-            {children}
-          </main>
+          <main>{children}</main>
 
           <Footer />
         </StoreProvider>

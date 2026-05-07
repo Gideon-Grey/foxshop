@@ -17,8 +17,6 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.top}>
-        <div className={styles.spacer} />
-
         <Link href="/" className={styles.logo}>
           FOXSHOP
         </Link>

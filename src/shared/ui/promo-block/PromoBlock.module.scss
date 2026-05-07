@@ -2,10 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  gap: 200px;
-
-  padding: 20px;
+  gap: 100px;
+  padding: 5px;
   border-radius: 16px;
   background: #fff;
 }
@@ -16,10 +14,8 @@
 
 .imageWrapper {
   position: relative;
-
   min-height: 350px;
   min-width: 500px;
-
   overflow: hidden;
 }
 
@@ -47,14 +43,28 @@
   .block {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
+    padding: 5px 5px 20px;
   }
 
   .imageWrapper {
     width: 100%;
     min-width: auto;
+    min-height: 200px;
+    height: auto;
+    aspect-ratio: 16/9;
   }
 
   .content {
     width: 100%;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 16px;
   }
 }

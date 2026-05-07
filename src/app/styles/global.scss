@@ -11,3 +11,18 @@ body {
 
   font-family: system-ui, sans-serif;
 }
+
+:root {
+  --header-height: 140px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 190px;
+  }
+}
+
+main {
+  padding-top: var(--header-height);
+  min-height: 80vh;
+}
